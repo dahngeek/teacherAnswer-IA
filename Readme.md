@@ -17,3 +17,7 @@ Ejecutar `python app.py`
 
 
 Demo: http://teacheranswer.herokuapp.com/
+
+## Screenshots
+
+![Captura](https://github.com/dahngeek/teacherAnswer-IA/blob/main/screenshot.png)
