@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{title}}</title>
+  </head>
+  <body>
+      <div class="container h-100">
+        <div class="row align-items-center h-10">
+          <div class="col-md-12 text-center">
+          <h1>{{title}}</h1>
+          </div>
+        </div>
+        <div class="row align-items-center h-10">
+          <div class="col-md-12 text-center">
+          <h5>{{context}}</h5>
+          </div>
+        </div>
+        <div class="row align-items-center h-80">
+            <div class="col-md-8 col-sm-12 mx-auto">
+                <div class="h-100 justify-content-center">
+                    <div style="background-color: #EDEDED; padding: 20px;">
+                      <img style="float:left;max-width: 60px; border-radius:30px;" src="./static/PROFE.jpg" alt="el profe">
+                      <h3 style="margin-top: 15px;padding-left: 70px;">   El profe</h3>
+                    </div>
+                    <div id="chat-container" style="overflow: auto; height: 60vh;background: url('./static/BG.jpg') no-repeat center center fixed;">
+                      <div style="row">
+                        <p>Ejemplo:</p>
+                    </div>
+                      <div style="row">
+                          <div class="chat-message col-md-5  bot-message">
+                              Alumno, entregue su tarea que tiene atrasada
+                          </div>
+                      </div>
+                      <div class="chat-message col-md-5 offset-md-7 offset-md-5 human-message">
+                        Sí profe, estaré enviandola lo más pronto posible
+                      </div>
+                      <hr>
+                </div>
+                    </div>
+                    <form id="target">
+                       <input class="input" type="text" value="" placeholder="Escriba aquí el mensaje de su profesor..." id="query"/>
+                       <input type="submit" hidden="">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='custom.js')}}"></script>
+  </body>
+</html>

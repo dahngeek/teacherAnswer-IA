@@ -1,0 +1,36 @@
+body,html {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    background-color: #abcbe7;
+}
+
+#chat-container {
+    margin: 0px;
+    padding: 0px 10px;
+}
+
+.chat-message {
+  padding: 6px;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+
+.bot-message {
+    background: #fff;;
+    color: black;
+}
+
+.human-message {
+    background: #dcf8c6;;
+    color: black;
+}
+
+.input, .input:focus, .input:hover {
+  width: 100%;
+  margin: 35px 0px;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid rosybrown;
+  border-radius: 30px;
+}
